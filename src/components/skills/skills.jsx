@@ -1,6 +1,5 @@
 import React from "react";
 import "./skills.css";
-import arrow from "../../assets/rigtharow.png";
 import { Element } from "react-scroll";
 import { scroller } from "react-scroll/modules";
 import sass from "../../assets/techicons/sass.png";
