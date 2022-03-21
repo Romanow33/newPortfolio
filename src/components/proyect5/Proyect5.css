@@ -1,0 +1,127 @@
+.container5 {
+  display: grid;
+  grid-template-columns: repeat(6, 115px);
+  grid-template-rows: repeat(6, 150px);
+}
+
+.cuadro5 {
+  gap: 10px;
+  display: grid;
+  grid-template-rows: repeat(5, 115px);
+  grid-template-columns: repeat(12, 115px);
+  grid-column: 2 / 10;
+  grid-row: 2 / 5;
+  width: 95%;
+/*   background-image: url(../../assets/losinson.gif); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 831px 100%;
+  perspective: 500px;
+}
+
+.mediodiv5 {
+  padding: 20px;
+  text-align: left;
+  grid-column: 8 / 11;
+  grid-row: 1 / 5;
+  word-wrap: break-word;
+  transform: rotateX(0deg) rotateY(340deg);
+  transform-style: preserve-3d;
+  font-size: 20px;
+}
+
+.videoHover5 {
+  width: 831px;
+  height: 345px;
+  background-color: inherit;
+}
+.videoHover5:hover {
+  width: 831px;
+  height: 345px;
+  background-color: inherit;
+  backdrop-filter: blur(60px);
+  text-align: center;
+}
+
+.icoPrueba5 {
+  width: 831px;
+  height: 345px;
+  opacity: 0;
+}
+.seeIcoPrueba5 {
+  width: 831px;
+  height: 345px;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+}
+
+.iconoGitHub5 {
+  background-image: url("../../assets/gitHub.svg");
+  box-shadow: -2px 200px 25px -60px rgba(0, 0, 0, 1);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-left: 15px;
+}
+.wwwIcon5 {
+  background-image: url("../../assets/www.svg");
+  box-shadow: -2px 200px 25px -60px rgba(0, 0, 0, 1);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-left: 15px;
+  color: "#fdff38";
+}
+.next5 {
+  width: 200px;
+  height: 100px;
+  padding: 10px 10px;
+  display: inline-block;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  grid-row: 1;
+  grid-column: 7;
+  background-color: transparent;
+  border-style: none;
+}
+.prev5 {
+  width: 200px;
+  height: 100px;
+  padding: 10px 10px;
+  display: inline-block;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  grid-row: 1;
+  grid-column: 5;
+  background-color: transparent;
+  border-style: none;
+}
+
+.next5 img {
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  transform: rotate(90deg);
+  display: flex;
+}
+
+.prev5 img {
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  transform: rotate(-90deg);
+}
+
+.prev5:hover {
+  filter: drop-shadow(1px 1px 10px #f60ebc);
+}
+.next5:hover {
+  filter: drop-shadow(1px 1px 10px #f60ebc);
+}

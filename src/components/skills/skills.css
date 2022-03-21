@@ -1,0 +1,73 @@
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 50px;
+  padding: 80px;
+  justify-content: center;
+  background-color: transparent;
+  margin-left: 60px;
+  box-shadow: inset 0 0 100px #f60ebc7a;
+}
+
+@media (max-width: 560px) {
+  .skillGrid {
+    grid-template-columns: 100%;
+  }
+}
+.skillGrid div {
+  text-align: center;
+  font-family: "NeonGlow";
+  text-shadow: 0 0 20px rgba(0, 178, 255, 1);
+}
+
+.skillImg {
+  filter: drop-shadow(1px 1px 1px rgba(0, 178, 255, 1)) invert(1) sepia(0)
+    hue-rotate(250deg) saturate(1000%);
+}
+.skillImg:hover {
+  transform: scale(1.2);
+}
+
+.nextSkill {
+  padding: 10px 10px;
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: none;
+  font-family: "NeonGlow";
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+    0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+    0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+    0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+    0 0 180px rgba(148, 42, 121);
+}
+.prevSkill {
+  padding: 10px 10px;
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: none;
+  font-family: "NeonGlow";
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+    0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+    0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+    0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+    0 0 180px rgba(148, 42, 121);
+}
+
+.prevSkill:hover {
+  text-shadow: none;
+}
+.nextSkill:hover {
+  text-shadow: none;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}

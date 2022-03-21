@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+.containerHome {
+  display: grid;
+  grid-template-columns: repeat(6, 115px);
+  grid-template-rows: repeat(5, 115px);
+  gap: 60px;
+  padding: 0px;
+}
+.navbar {
+  justify-content: flex-start;
+}
+.imageProfile {
+  grid-row: 2;
+  grid-column: 2;
+  margin-top: 0px;
+  background-color: transparent;
+  width: 25rem;
+  height: 25rem;
+  background-size: cover;
+  box-shadow: 10px 10px 300px -83p rgba(0, 178, 255, 1);
+  border-radius: 25px;
+  animation: neon-picture 3s forwards;
+  background-image: url("../../assets/me22.jpg");
+  transition: transform 2s;
+}
+.refImgExit {
+  transform: translateX(-1000px);
+  z-index: 2;
+  transition: transform 2s;
+  animation: turnOffPicture 1s forwards;
+}
+
+.tittleContainer {
+  grid-row: 2;
+  grid-column: 5;
+  height: 0px;
+  align-items: bottom;
+  justify-content: center;
+  transform: translateY(100px);
+  transition: transform 2s;
+}
+.refDownName {
+  grid-row: 2;
+  transform: translate(-200px, 400px);
+  transition: transform 2s;
+  grid-column: 5;
+  height: 0px;
+  align-items: bottom;
+  justify-content: center;
+}
+.neonFirstName {
+  color: #fff;
+  font-family: "Neon";
+  font-size: 4em;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+    0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+    0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+    0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+    0 0 180px rgba(38, 104, 127, 1);
+  padding: 10px;
+  animation: first-name-neon 2s forwards;
+}
+
+.neonLastName {
+  color: #fff;
+  line-height: 1;
+  font-family: "Neon";
+  font-size: 4.5em;
+  text-align: center;
+  animation: last-name-neon 5s forwards;
+}
+
+.aboutMe {
+  letter-spacing: 2px;
+  transform: translateX(-118rem);
+  transition: transform 1s;
+  text-align: left;
+  width: 40rem;
+  height: auto;
+  font-size: 2vw;
+  line-height: 50px;
+  font-family: "PT Sans Narrow", sans-serif;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.refAboutShow {
+  transform: translateX(10rem);
+  z-index: 2;
+  transition: transform 1s;
+  width: 40rem;
+  height: auto;
+  text-align: left;
+}
+
+.posterContainer {
+  align-items: center;
+  z-index: 2;
+  grid-row: 4;
+  grid-column: 8;
+}
+
+.moreForMe {
+  line-height: 0;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  overflow: visible;
+  padding: 10px;
+  cursor: pointer;
+}
+.moreForMeOn {
+  line-height: 0;
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+    0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+    0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+    0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+    0 0 180px rgba(148, 42, 121);
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  overflow: visible;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.moreForMe:hover {
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+    0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+    0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+    0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+    0 0 180px rgba(148, 42, 121);
+}
+
+.moreForMeText {
+  font-family: "Neon";
+  line-height: 1;
+  font-size: 30px;
+  color: #f513bc;
+}
+.arrowIcon {
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  opacity: 0.1;
+  animation: arrow-poster-animation 3s infinite;
+}
+.arrowIconOff {
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  opacity: 0.9;
+  transform: rotate(180deg);
+  transition: transform 3s;
+}
+.arrowIcon:hover {
+  filter: drop-shadow(1px 1px 10px #f60ebc);
+  opacity: 0.9;
+}
+
+.buttonToProyect {
+  width: 200px;
+  height: 100px;
+  padding: 10px 10px;
+  display: inline-block;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "NeonGlow";
+  overflow: hidden;
+  grid-row: 1;
+  grid-column: 3;
+  background-color: transparent;
+  border-style: none;
+  color: #f513bc;
+  border-radius: 200px;
+}
+
+.buttonToSkills {
+  width: 240px;
+  height: 100px;
+  padding: 10px 10px;
+  display: inline-block;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "NeonGlow";
+  overflow: hidden;
+  grid-row: 1;
+  grid-column: 5;
+  background-color: transparent;
+  border-style: none;
+  color: #f513bc;
+}
+.buttonToCv {
+  width: 200px;
+  height: 100px;
+  padding: 10px 10px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "NeonGlow";
+  overflow: hidden;
+  grid-row: 1;
+  grid-column: 9;
+  background-color: transparent;
+  border-style: none;
+  color: rgba(0, 178, 255, 1);
+}
+/*creating animation effect*/
+.buttonToProyect:hover {
+  color: white;
+  font-family: "NeonGlow";
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+    0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+    0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+    0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+    0 0 180px rgba(148, 42, 121);
+  background: transparent;
+}
+
+.buttonToSkills:hover {
+  color: white;
+  font-family: "NeonGlow";
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+    0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+    0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+    0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+    0 0 180px rgba(148, 42, 121);
+  background: transparent;
+}
+.buttonToCv:hover {
+  color: white;
+  font-family: "NeonGlow";
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+    0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+    0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+    0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+    0 0 180px rgba(148, 42, 121);
+  background: transparent;
+}
+/* Fonts */
+@font-face {
+  font-family: "Neon";
+  src: url("../../assets/Neon\ Planet\ Display.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "NeonGlow";
+  src: url("../../assets/NEON\ GLOW.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Animations */
+@keyframes neon-picture {
+  20%,
+  50%,
+  60%,
+  80%,
+  85%,
+  90%,
+  100% {
+    /*     box-shadow: 0 0 2px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+      0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+      0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+      0 0 180px rgba(38, 104, 127, 1); */
+    opacity: 1;
+  }
+
+  25%,
+  50%,
+  55%,
+  94%,
+  95% {
+    opacity: 0.5;
+    /*     box-shadow: inset 150px 20px 122px 98px black; */
+  }
+}
+
+@keyframes turnOffPicture {
+  100% {
+    /* box-shadow: inset 150px 20px 122px 98px black; */
+    opacity: 0;
+  }
+}
+
+@keyframes first-name-neon {
+  0%,
+  10%,
+  15%,
+  20%,
+  30%,
+  35%,
+  40%,
+  50%,
+  55%,
+  60%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  100% {
+    text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+      0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+      0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+      0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+      0 0 180px rgba(38, 104, 127, 1);
+    opacity: 0.8;
+  }
+  0%,
+  25%,
+  50%,
+  55%,
+  60%,
+  65%,
+  75%,
+  85%,
+  90%,
+  95% {
+    text-shadow: none;
+  }
+}
+
+@keyframes last-name-neon {
+  0%,
+  10%,
+  15%,
+  20%,
+  30%,
+  35%,
+  40%,
+  50%,
+  55%,
+  60%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  100% {
+    text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+      0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+      0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+      0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+      0 0 180px rgba(38, 104, 127, 1);
+  }
+  0%,
+  25%,
+  50%,
+  55%,
+  60%,
+  65%,
+  75%,
+  85%,
+  90%,
+  95% {
+    text-shadow: none;
+  }
+}
+
+@keyframes arrow-poster-animation {
+  0% {
+    opacity: 0.9;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 0;
+  }
+}

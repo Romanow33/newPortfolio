@@ -1,0 +1,40 @@
+.changeLenguaje {
+  margin-right: 5px;
+  margin-top: 0;
+  width: 15px;
+  word-wrap: break-word;
+  text-align: center;
+  position: static;
+  float: right;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-family: "NeonGlow";
+}
+.changeLenguaje:hover {
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+    0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+    0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+    0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+    0 0 180px rgba(148, 42, 121);
+}
+
+.changeLenguajeOn {
+  margin-right: 5px;
+  margin-top: 0;
+  width: 15px;
+  word-wrap: break-word;
+  text-align: center;
+  position: static;
+  float: right;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+  text-shadow: 0 0 5px #f513bc, 0 0 10px rgb(245, 19, 188),
+  0 0 20px rgba(245, 19, 188), 0 0 40px rgb(148, 42, 121),
+  0 0 80px rgba(148, 42, 121), 0 0 90px rgba(148, 42, 121),
+  0 0 100px rgba(148, 42, 121), 0 0 140px rgba(148, 42, 121),
+  0 0 180px rgba(148, 42, 121);
+}
