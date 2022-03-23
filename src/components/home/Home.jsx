@@ -72,7 +72,7 @@ function Home({ lenguaje }) {
           {lenguaje === true ? (
             <a
               className="buttonToCv"
-              href="https://drive.google.com/file/d/1B-Lln6Mn_WbdLMYVa288oCzZnLgKcTCy/view?usp=sharing"
+              href="https://drive.google.com/file/d/1BghJkUuOuXGy28knp1k-LQiwiGthqVAg/view?usp=sharing"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -81,7 +81,7 @@ function Home({ lenguaje }) {
           ) : (
             <a
               className="buttonToCv"
-              href="https://drive.google.com/file/d/16d0lYkIYoxR2pcpZ8BkQlHzwfTwur_LL/view"
+              href="https://drive.google.com/file/d/1Dmkjz0VQaPyldsQ9xFPHfYhKxfVk69rI/view?usp=sharing"
               rel="noopener noreferrer"
               target="_blank"
             >
